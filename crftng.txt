@@ -1,13 +1,9 @@
 explosive ammo:
     iron bar / coal (2)
-farm computer:
-    dward gadget / battery pack / refined quartz
 glowstone ring:
     solar essence (5) / iron bar (5)
 mini-jukebox:
     iron bar (2) / battery pack
-rain totem:
-    hardwood / truffle oil / pine tar (5)
 ring of yoba:
     iron bar (5) / gold bar (5) / diamond
 slime egg-press:
@@ -22,12 +18,8 @@ stump brazier:
     hardwood (5) / coal
 sturdy ring:
     copper bar (2) / bug meat (25) / slime (25)
-tea sapling:
-    fiber (5) / wood (5)
 treasure hunter:
     gold bar (2)
-tub o' flowers
-    wood (15) / tulip bulb / jazz seeds / poppy seeds / spangle seeds
 warp totem: mountains
     hardwood / iron bar / stone (25)
 warrior ring:
@@ -40,3 +32,16 @@ wooden brazier:
     wood (10) / coal / fiber (5)
 worm bin:
     hardwood (25) / gold bar / iron bar / fiber (50)
+
+iron ore (3+25+10+25+50+25+50+10+20+5+50+10+5) / coal (2+5+2+5+10+25+5+10+2+1+1+4+1+10+25+5+1+2+1) / bug meat (25+5) ==============================================
+iron ore (288) / coal (117) / bug meat (30) =======================================================================================================================
+
+
+farm computer:
+    dward gadget / battery pack / refined quartz
+rain totem:
+    hardwood / truffle oil / pine tar (5)
+tea sapling:
+    wild sead \(any\) (2) / fiber (5) / wood (5)
+tub o' flowers
+    wood (15) / tulip bulb / jazz seeds / poppy seeds / spangle seeds
