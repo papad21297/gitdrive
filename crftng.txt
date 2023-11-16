@@ -1,155 +1,41 @@
-barbed hook:
-    copper bar / iron bar / gold bar
-barrel brazier:
-    wood (50) / solar essence / coal
-basic fertilizer:
-    sap (2)
-basic retaining soil:
-    stone (2)
-bomb:
-    iron ore (4) / coal
-bone mill:
-    bone fragment (10) / clay (3) / stone (20)
-brick floor:
-    clay (2) / stone (5)
-campfire:
-    stone (10) / wood (10) / fiber (10)
-carved brazier:
-    hardwood (10) / coal
-cask:
-    wood (20) / hardwood
-cobblestone path:
-    stone
-cookout kit:
-    wood (15) / fiber (10) / coal (3)
-cork bobber:
-    wood (10) / hardwood (5) / slime (10)
-crystal floor:
-    refined quartz (1)
-dark sign:
-    bat wing (5) / bone fragment (5)
-deluxe speed-gro:
-    oak resin / coral
-dressed spinner:
-    iron bar (2) / cloth
-drum block:
-    stone (10) / copper ore (2) / fiber (20)
 explosive ammo:
     iron bar / coal (2)
-fairy dust:
-    diamond / fairy rose
 farm computer:
     dward gadget / battery pack / refined quartz
-fiber seed:
-    mixed seed / sap (5) / clay
-garden pot:
-    clay / stone (10) / refined quartz
-geode crusher:
-    gold bar (2) / stone (50) / diamond
 glowstone ring:
     solar essence (5) / iron bar (5)
-gold brazier:
-    gold bar / coal / fiber (5)
-grass starter:
-    fiber (10)
-gravel path:
-    stone
-iron fence:
-    iron bar
-jack-o-lantern:
-    pumpkin / torch
-life elixir:
-    red mushroom / purple mushroom / morel / chanterelle
-magnet:
-    iron bar
-marble brazier:
-    marble / aquamarine / stone (100)
-mega bomb:
-    gold ore (4) / solar essence / void essence
 mini-jukebox:
     iron bar (2) / battery pack
-mini-obelisk:
-    hardwood (30) / solar essence (20) / gold bar (3)
-monster musk:
-    slime (30) / bat wing (30)
-oil of garlic:
-    garlic (10) / oil
-quality bobber:
-    copper bar / sap (20) / solar essence (5)
-quality fertilizer:
-    sap (2) / any fish
-quality retaining soil:
-    stone (3) / clay
 rain totem:
     hardwood / truffle oil / pine tar (5)
-recycling machine:
-    wood (25) / stone (25) / iron bar
 ring of yoba:
     iron bar (5) / gold bar (5) / diamond
-rustic plank floor:
-    wood
-skull brazier:
-    bone fragment (10)
 slime egg-press:
     coal (25) / fire quartz / battery pack
-slime incubator:
-    iridium bar (2) / slime (100)
 solar panel:
     refined quartz (10) / iron bar (5) / gold bar (5)
-speed-gro:
-    pine tar / clam
 spinner:
     iron bar (2)
-stepping stone path:
-    stone
 stone brazier:
     stone (10) / coal / fiber (5)
-stone chest:
-    stone (50)
-stone fence:
-    stone (2)
-stone floor:
-    stone
-stone sign:
-    stone (25)
-stone walkway floor:
-    stone
-straw floor:
-    wood / fiber
 stump brazier:
     hardwood (5) / coal
 sturdy ring:
     copper bar (2) / bug meat (25) / slime (25)
 tea sapling:
     fiber (5) / wood (5)
-thorns ring:
-    bone fragment (50) / stone (50) / gold bar (1)
 treasure hunter:
     gold bar (2)
-tree fertilizer:
-    fiber (5) / stone (5)
 tub o' flowers
     wood (15) / tulip bulb / jazz seeds / poppy seeds / spangle seeds
-warp totem: island:
-    hardwood (5) / dragon tooth / ginger
 warp totem: mountains
     hardwood / iron bar / stone (25)
 warrior ring:
     iron bar (10) / coal (25) / fronzen tear (10)
-weathered floor:
-    wood
 wicked statue:
     stone (25) / coal (5)
 wild bait:
     fiber (10) / slime (5) / bug meat (5)
-winter seeds:
-    crocus / crsytal fruit / snow yam / winter root
-wood floor:
-    wood
-wood path:
-    wood
-wood sign:
-    wood (25)
 wooden brazier:
     wood (10) / coal / fiber (5)
 worm bin:
