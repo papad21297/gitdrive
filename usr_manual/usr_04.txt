@@ -1,0 +1,469 @@
+U.S.R. underscore O. four dot T.X.T.
+for vim version eight point two
+last change
+twenty twenty-one february twenty-two
+vim user manual
+by bram moolenaar
+making small changes
+this chapter shows you several ways of making corrections and moving text around
+it teaches you the three basic ways to change text
+operation motion
+visual mode and text objects
+O. four point one
+operators and motions
+O. four point two
+changing text
+O. four point three
+repeating a change
+O. four point four
+visual mode
+O. four point five
+moving text
+O. four point six
+copying text
+O. four point seven
+using the clipboard
+O. four point eight
+text objects
+O. four point nine
+replace mode
+O. four point ten
+conclusion
+next chapter
+U.S.R. underscore O. five dot T.X.T.
+set your settings
+previous chapter
+U.S.R. underscore O. three dot T.X.T.
+moving around
+table of contents
+U.S.R. underscore T.O.C. dot T.X.T.
+O. four point one
+Operators and motions
+in chapter two you learned the X. command to delete a single character
+and using a count
+four X.
+deletes four characters
+the D.W. command deletes a word
+you may recognize the W. command as the move word command
+in fact 
+the D. command may be followed by any motion command
+and it deletes from the current location to the place where the cursor winds up
+the four W. command
+for example
+moves the cursor over four words
+the D. four W. command deletes four words
+vim only deletes up to the position where the motion takes the cursor that's
+because vim knows that you probably don't want to delete the first character of
+a word if you use the E. command to move to the end of a word vim guesses that
+you do want to include that last character whether the character under the
+cursor is included depends on the command you used to move to that character the
+reference manual calls this exclusive when the character isn't included and
+inclusive when it is the dollar sign command moves to the end of a line the D.
+dollar sign command deletes from the cursor to the end of the line this is an
+inclusive motion thus the last character of the line is included in the delete
+operation there is a pattern here operator motion you first type an operation
+command for example
+D. is the delete operator
+then you type a motion command like four L. or W.
+this way you can operate on any text you can move over
+O. four point two
+changing text
+another operator is C.
+change
+it acts just like the D. operator
+except it leaves you in insert mode
+for example
+C.W. changes a word
+or more specifically
+it deletes a word and then puts you in insert mode
+this C. two W. be escape contains these bits
+C.
+the change operator
+two W.
+move two words
+they are deleted and insert mode started
+be
+insert this text
+escape
+back to normal mode
+you will have noticed something strange
+the space before human isn't deleted
+there is a saying that for every problem there is an answer that is simple
+clear
+and wrong
+that is the case with the example used here for the C.W. command
+the C. operator works just like the D. operator
+with one exception
+C.W.
+it actually works like C.E.
+change to end of word
+thus the space after the word isn't included
+this is an exception that dates back to the old V.I.
+since many people are used to it now
+the inconsistency has remained in vim
+more changes
+like D.D. deletes a whole line
+C.C. changes a whole line
+it keeps the existing indent
+leading white space
+though
+just like D. dollar sign deletes until the end of the line
+C. dollar sign changes until the end of the line it's like doing D. dollar sign
+to delete the text and then A. to start insert mode and append new text
+shortcuts some operator motion commands are used so often that they have been
+given a single letter command lowercase X. stands for D.L.  delete character
+under the cursor uppercase X. stands for D.H.
+delete character left of the cursor
+uppercase D. stands for D. dollar sign
+delete to the end of the line
+uppercase C. stands for C. dollar sign
+change to end of the line
+lowercase S. stands for C.L.
+change one character
+uppercase S. stands for double C.
+change a whole line
+where to put the count
+the commands three D.W. and D. three W. delete three words
+if you want to get really picky about things
+the first command
+three D.W. deletes one word three times
+the command D. three W. deletes three words once
+this is a difference without a distinction
+you can really put in two counts
+however
+for example
+three D. two W. deletes two words
+repeated three times
+for a total of six words
+replacing with one character
+the R. command is not an operator
+it waits for you to type a character
+and will replace the character under the cursor with it
+you could do the same with C.L. or with the S. command
+but with R. you don't have to press escape to get back out of insert mode
+using a count with R. causes that many characters to be replaced with the same
+character
+example
+to replace a character with a line break use R. enter
+this deletes one character and inserts a line break
+using a count here only applies to the number of character deleted
+four R. enter replaces four characters with one line break
+O. four point three
+repeating a change
+the period command is one of the simplest yet powerful commands in vim
+it repeats the last change
+for instance
+suppose you are editing an H.T.M.L. file and want to delete all the B. tags
+you position the cursor on the first opening angle bracket and delete the B.
+with command D.F. closing angle bracket you then go to the opening angle bracket
+of the next closing B. tag and delete it using the period command the period
+command executes the last change command in this case D.F. closing angle bracket
+to delete another tag position the cursor on the opening angle bracket and use
+the period command to with the first character in uppercase opening B. tag
+generate closing B. tag a table of opening B. tag contents F. opening angle
+bracket find first opening angle bracket D.F. closing angle bracket delete to
+closing angle bracket
+F. opening angle bracket
+find next opening angle bracket
+period
+repead D.F. closing angle bracket
+F. opening angle bracket
+find next opening angle bracket
+period
+repeat D.F. closing angle bracket
+the period command works for all changes you make
+except for U.
+undo
+control R.
+redo
+and commands that start with a colon
+another example
+you want to change the word four to five
+it appears several times in your text
+you can do this quickly with this sequence of commands
+slash four enter
+find the first string four
+C.W. five escape
+change the word to five
+N. find the next four
+period
+repead the change to five
+N.
+find the next four
+period
+repeat the change
+E.T.C.
+O. four point four
+visual mode
+to delete simple items the operator motion changes work quite well
+but often it's not so easy to decide which command will move over the text you
+want to change then you can use visual mode you start visual mode by pressing V.
+you move the cursor over the text you want to work on while you do this the text
+is highlighted finally type the operator command for example to delete from the
+middle of one word to the middle of another word when doing this you don't
+really have to count how many times you have to press L. to end up in the right
+position you can immediately see what text will be deleted when you press D.  if
+at any time you decide you don't want to do anything with the highlighted text
+just press escape and visual mode will stop without doing anything selecting
+lines if you want to work on whole lines
+use V. to start visual mode
+you will see right away that the whole line is highlighted
+without moving around
+when you move left or right nothing changes
+when you move up or down the selection is extended whole lines at at time
+for example
+select three lines with uppercase V. lowercase double J.
+selecting blocks
+if you want to work on a rectangular block of characters
+use control V. to start visual mode
+this is very useful when working on tables
+to delete the middle Q. two column
+move the cursor to the Q. of Q. two
+press control V. to start blockwise visual mode
+now move the cursor three lines down with three J. and to the next word with W.
+you can see the first character of the last column is included
+to exclude it
+use H.
+now press D. and the middle column is gone
+going to the other side
+if you have selected some text in visual mode
+and discover that you need to change the other end of the selection
+use the O. command
+hint
+O. for other end
+the cursor will go to the other end
+and you can move the cursor to change where the selection starts
+pressing O. again brings you back to to the other end
+and you can move the cursor to change where the selection starts
+pressing O. again brings you back to the other end
+when using blockwise selection
+you have four corners
+O. only takes you to one of the other corners
+diagonally
+use O. to move to the other corner in the same line
+note that lowercase O. and uppercase O. in visual mode work very differently
+from normal mode
+where they open a new line below or above the cursor
+O. four point five
+moving text
+when you delete something with D.
+X.
+or another command
+the text is saved
+you can paste it back using the P. command
+the vim name for this it put
+take a look at how this works
+first you will delete an entire line
+by putting the cursor on the line you want to delete and typing double D.
+now you move the cursor to where you want to put the line and use the P.
+put
+command
+because you deleted an entire line
+the P. command placed the text line below the cursor
+if you delete part of a line
+a word
+for instance
+the P. command puts it just after the cursor
+more on putting
+the P. command puts text like P.
+but before the cursor
+when you deleted a whole line with double D.
+uppercase P. will put it back above the cursor
+when you deleted a word with D.W.
+uppercase P. will put it back just before the cursor
+you can repeat putting as many times as you like
+the same text will be used
+you can use a count with lowercase P. and uppercase P.
+the text will be repeated as many times as specified with the count
+thus double D. and then three P. puts three copies of the same deleted line
+swapping two characters
+frequently when you are typing
+your fingers get ahead of your brain
+or the other way around?
+the result is a typo such as T.E.H. for the
+vim makes it easy to correct such problems
+just put the cursor on the E. of T.E.H. and execute the command X.P.
+this works as follows
+X. deletes the character E. and places it in a register
+P. puts the text after the cursor which is after the H.
+O. four point six
+copying text
+to copy text from one place to another
+you could delete it
+use U. to undo the deletion and then P. to put it somewhere else
+there is an easier way
+yanking
+the Y. operator copies text into a register
+then a P. command can be used to put it
+yanking is just a vim name for copying
+the C. letter was already used for the change operator
+and Y. was still available
+calling this operator yank made it easier to remember to use the Y. key
+since Y. is an operator
+you use Y.W. to yank a word
+a count is possible as usual
+to yank two words use Y. two W.
+example
+notice that Y.W. includes the white space after a word
+if you don't want this
+use Y.E.
+the double Y. command yanks a whole line
+just like double D. deletes a whole line
+unexpectedly
+while uppercase D. deletes from the cursor to the end of the line
+uppercase Y. works like double Y. it yanks the whole line
+watch out for this inconsistency!
+use Y. dollar sign to yank to the end of the line
+O. four point seven
+using the clipboard
+if you are using the G.U.I. version of vim
+G. vim
+you can find the copy item in the edit menu
+first select some text with visual mode
+then use the edit or copy menu item
+the selected text is now copied to the clipboard
+you can paste the text in other programs
+in vim itself too
+if you have copied text to the clipboard in another application
+you can paste it in vim with the edit paste menu item
+this works in normal mode and insert mode
+in visual mode the selected text is replaced with the pasted text
+the cut menu item deletes the text before it's put on the clipboard
+the copy
+cut and paste items are also available in the popup menu
+only when there is a popup menu of course
+if your vim has a toolbar
+you can also find these items there
+if you are not using the G.U.I.
+or if you don't like using a menu
+you have to use another way
+you use the normal Y.
+yank
+and P.
+put
+commands
+but prepend double quote star before it
+to copy a line to the clipboard
+double quote asterisk double Y.
+to put text from the clipboard back into the text
+double quote asterisk P.
+this only works on versions of vim that include clipboard support
+more about the clilpboard can be found in section O. nine point three and here
+clipboard
+O. four point eight
+text objects
+if the cursor is in the middle of a word and you want to delete that word
+you need to move back to its start before you can do D.W.
+there is a simpler way to do this
+D.A.W.
+the D. of D.A.W. is the delete operator
+A.W. is a text object
+hint A.W. stands for a word
+thus D.A.W. is delete a word
+to be precise
+the white space afterthe word is also deleted
+or the white space before the word if it at the end of the line
+using text objects is the third way to make changes in vim
+we already had operator motion and visual mode
+now we add operator text object
+it is very similar to operator motion
+but instead of operating on the text between the cursor position before and
+after a movement command
+the text object is used as a whole
+it doesn't matter where in the object the cursor was
+to change a whole sentence use C.I.S.
+take this text
+move to the start of the second line
+on is an
+now use C.I.S.
+the cursor is in between the blanks in the first line
+now you type the new
+sentence another line
+C.I.S. consits of the C.
+change
+operator and the is text object
+this stands for inner sentence
+there is also the as
+a sentence
+object
+the difference is that as includes the white space after the sentence and is
+doesn't
+if you would delete a sentence
+you want to delete the white space at the same line
+then use D.A.S.
+if you want to type new text the white space can remain
+thus you use C.I.S.
+you can also use text objects in visual mode
+it will include the text object in the visual selection
+visual mode continues
+thus you can do this several times
+for example
+start visual mode with V. and select a sentence with as
+now you can repeat as to include more sentences
+finally you use an operator to do something with the selected sentences
+you can find a logn list of text objects here
+text objects
+O. four point nine
+replace mode
+the uppercase R. command causes vim to enter replace mode
+in this mode
+each character you type replaces the one under the cursor
+this continues until you type escape
+in this example you start replace mode on the first T. of text
+you may have noticed that this command replaced five characters in the line with
+twelve others
+the uppercase R. command automatically extends the line if it runs out of
+chracters to replace
+it will not continue on the next line
+you can switch between insert mode and replace mode with the insert key
+when you use backspace to make a correction
+you will notice that the old text is put back
+thus it works like an undo command for the previously typed character
+O. four point ten
+conclusion
+the operators
+movement commands and text objects give you the possibility to make lots of
+combinations
+now that you know how they work,
+you can use N. operators with M. movent commands to make N. times M. commands
+you can find a list of operators here
+operator
+for example
+there are many other ways to delete pieces of text
+here are a few common ones
+lowercase X. delete character under the cursor
+short for D.L.
+uppercase X. delete character before the cursor
+short for D.H.
+uppercase D. delete from cursor to end of line
+short for D. dollar sign
+lowercase D. and W. delete from cursor to next start of word
+lowercase D. and B. delete from cursor to previous start of word
+lowercase D., I. and W. delete word under the cursor
+excluding white space
+lowercase D., A. and W. delete word under the cursor
+including white space
+lowercase D. and uppercase G. delete until the end of the file
+lowercase D., G. and G. delete until the start of the file
+if you use C. instead of D. they become change commands
+and with Y. you yank the text
+and so forth
+there are a few common commands to make changes that didn't fit somewhere else
+tilde
+change case of the character under the cursor
+and move the cursor to the next character
+this is not an operator
+unless tilde O.P. is set
+thus you can't use it with a motion command
+it doew work in visual mode
+where it changes case for all the selected text
+uppercase I.
+start insert mode after moving the cursor to the first non blank in the line
+uppercase A. start insert mode after moving the cursor to the end of the line
+next chapter
+U.S.R. underscore O. five dot T.X.T.
+set your settings
+copyright
+see manual copyright
+vim colon T.W. equals seventy-eight colon T.S. equals eight colon no E.T. colon
+F.T. equals help colon no R.L. colon
