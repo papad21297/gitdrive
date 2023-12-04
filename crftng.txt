@@ -1,9 +1,37 @@
-need to buy the following:
-    - coal (6 + 35 + (30 * 5))
-        = 191
-    - gold ore (1)
-        = 1
-    - stone (99 * 7 + (99 * 5) - 157)
-        = 1031
-    - copper ore (150 * 5)
-        = 750
+- available gold: 1,179,765g
+- available resources:
+        - gold ore (150)
+        - iridium bar (94)
+        - iridium ore (33)
+        - iron bar (2)
+        - iron ore (104)
+        - battery (198)
+        - stone (36)
+        - wood (671)
+
+-> turning all existing ores to become metal bars
+-> crafting crystalariums
+-> crafting kegs
+
+the state of available resources becomes:
+        - iridium bar (88)
+        - iridium ore (3)
+        - battery (192)
+obtained crafting:
+        - crystalarium (6)
+        - keg (23)
+
+- crafting extra machines from buying:
+        - 13 crystalarium: copper ore (1950) / coal (390) / stone (1287) = 13 * ((150 * 150) + (30 * 250) + (99 * 100)) = 13 * 39 900
+        - 13 keg: copper ore (260) / coal (52) / wood (390) = 13 * ((20 * 150) + (4 * 250) + (30 * 50)) = 13 * 5 500
+
+- stuffs need to buy:
+        - coal (492)
+        - iron ore (1)
+        - copper ore (2325)
+        - stone (558)
+        - wood (1706)
+        - ?
+
+- total cost: (50 * 250) + 250 + (115 * 150) + 55800 + (29 * 50) = 87,250
+- remaining gold: 1,092,515 g
