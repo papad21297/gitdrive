@@ -1,37 +1,102 @@
-- available gold: 1,179,765g
+- available gold: 3,085,604g 8054046
 - available resources:
-        - gold ore (150)
-        - iridium bar (94)
-        - iridium ore (33)
-        - iron bar (2)
-        - iron ore (104)
-        - battery (198)
-        - stone (36)
-        - wood (671)
+        - iridium bar (90)
+        - iridium ore (3)
+        - battery (212)
+        - oak resin (282)
+        - wood (192)
+obtained crafting:
+        - crystalarium (12)
+        - keg (0)
 
 -> turning all existing ores to become metal bars
--> crafting crystalariums
--> crafting kegs
-
-the state of available resources becomes:
-        - iridium bar (88)
-        - iridium ore (3)
-        - battery (192)
-obtained crafting:
-        - crystalarium (6)
-        - keg (23)
-
-- crafting extra machines from buying:
-        - 13 crystalarium: copper ore (1950) / coal (390) / stone (1287) = 13 * ((150 * 150) + (30 * 250) + (99 * 100)) = 13 * 39 900
-        - 13 keg: copper ore (260) / coal (52) / wood (390) = 13 * ((20 * 150) + (4 * 250) + (30 * 50)) = 13 * 5 500
 
 - stuffs need to buy:
-        - coal (492)
-        - iron ore (1)
-        - copper ore (2325)
-        - stone (558)
-        - wood (1706)
-        - ?
+        - gold ore (4)
+        - iron ore (2)
+        - copper ore (60)
+        - coal (19)
+        - stone (772)
+        - wood (6)
+        - ? (?)
+- buying cost: (4 * 750) + (2 * 250) + (60 * 150) + (19 * 250)
+        + (772 * 100) + (6 * 50) = 94750
+- remaining gold: 3085604 - 94750 = 2990854
 
-- total cost: (50 * 250) + 250 + (115 * 150) + 55800 + (29 * 50) = 87,250
-- remaining gold: 1,092,515 g
+12 crystalarium:
+        - copper ore (12 * 150 * 150)
+        - coal (12 * 30 * 250)
+        - stone (12 * 99 * 100)
+        -> buying cost: (12 * 150 * 150) + (12 * 30 * 250)
+                + (12 * 99 * 100)
+                = 478800
+84 keg:
+        - copper ore (84 * 20)
+        - coal (84 * 4)
+        - wood (84 * 50)
+        -> buying cost: (84 * 20 * 150) + (12 * 30 * 250)
+                + (12 * 99 * 100)
+                = 460800
+
+================================================
+
+- TOTAL stuffs need to buy:
+        - gold ore (4)
+        - iron ore (2)
+        - copper ore (3540)
+        - coal (715)
+        - stone (2071)
+        - wood (4206)
+        - ? (?)
+        -> buying cost: (4 * 750) + (2 * 250) + (3540 * 150)
+                + (715 * 250) + (2071 * 100) + (4206 * 50)
+                = 1130650
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+- Escargot:
+        - Snail (1)
+        - Garlic (1)
+- Lobster Bisque:
+        - Lobster (1)
+        - Milk (1)
+- Poi:
+        - Taro Root (4)
+- Stuffing
+        - Wheat Flour (1)
+                - cooking > Bread
+        - Cranberries (1)
+        - Hazelnut (1)
+- Tom Kha Soup
+        - Coconut
+        - Shrimp
+        - Common Mushroom
+
+
+================================================
+
+- crab pot (freshwater):
+        - Snail (1)
+- greenhouse planting
+        - Garlic (1)
+        - Taro Root (4)
+        - Hazelnut (1)
+- crab pot (seawater):
+        - Lobster (1)
+        - Shrimp (1)
