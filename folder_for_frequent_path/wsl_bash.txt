@@ -1,0 +1,11 @@
+wsl ~
+
+clear&&$(bash ~/shell_files/script.sh 0
+)&&bash ~/shell_files/script.sh 1
+
+clear&&$(bash ~/shell_files/script.sh 2 1
+)&&bash ~/shell_files/script.sh 1
+
+bash ~/shell_files/clipdir.sh
+
+clear&&mv /mnt/c/Users/hmila/Downloads/response.txt [file-name].txt
